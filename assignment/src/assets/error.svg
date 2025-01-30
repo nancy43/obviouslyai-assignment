@@ -1,0 +1,6 @@
+<svg width="64" height="22" viewBox="0 0 64 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0.5" y="0.5" width="63" height="21" rx="6" fill="#FEF3F2"/>
+  <rect x="0.5" y="0.5" width="63" height="21" rx="6" stroke="#FECDCA"/>
+  <circle cx="14" cy="11" r="3" fill="#F04438"/>
+  <text x="24" y="15" font-size="10" font-weight="500" fill="#B42318" font-family="Inter, sans-serif" text-anchor="start">Error</text>
+</svg>
