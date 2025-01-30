@@ -18,7 +18,7 @@
         <!-- Search Bar -->
         <div class="mt-5 relative w-[263px] h-[30px] border border-gray-300 rounded-md flex items-center px-2 py-2">
         <img src="/src/assets/search-lg.svg" alt="Search icon" class="w-4 h-4 text-[#667085]" />
-        <input type="text" placeholder="Search" class="w-full h-full focus:outline-none focus:ring-2 focus:ring-blue-500 ml-2" />
+        <input type="text" placeholder="Search" v-model="searchQuery"  class="w-full h-full focus:outline-none focus:ring-2 focus:ring-blue-500 ml-2" />
         </div>
             
         <!-- Table Section with Virtual Scrolling -->
@@ -48,7 +48,7 @@
             </thead>
             
             <tbody>
-              <tr v-for="dataset in datasets" :key="dataset.id" class="border-t font-normal text-sm">
+              <tr v-for="dataset in filteredDatasets" :key="dataset.id" class="border-t font-normal text-sm">
                 <td class="px-6 py-6 flex items-center gap-2">
                     <label class="flex items-center cursor-pointer">
                         <input type="checkbox" class="hidden peer">
@@ -97,9 +97,18 @@
   </template>
   
   <script setup>
-  import { ref } from 'vue';
+  import { ref, computed } from 'vue';
   import datasetsData from '../data/datasets'; 
   
+  const searchQuery = ref('');
+  const datasets = ref(datasetsData);
+
+  const filteredDatasets = computed(() => {
+    return datasets.value.filter(dataset =>
+      dataset.name.toLowerCase().includes(searchQuery.value.toLowerCase())
+    );
+  });
+
   const fileIcons = {
     pdf: './src/assets/PDF.svg',
     jpg: './src/assets/JPG.svg',
@@ -124,8 +133,6 @@ const getFileIcon = (fileName) => {
   return fileIcons[ext] || '/assets/default.svg';
 };
   
-  const datasets = ref(datasetsData);
-  
   const deleteDataset = (id) => {
     datasets.value = datasets.value.filter(dataset => dataset.id !== id);
   };
@@ -139,5 +146,6 @@ const getFileIcon = (fileName) => {
   @import "tailwindcss/base";
   @import "tailwindcss/components";
   @import "tailwindcss/utilities";
+  
   </style>
   
