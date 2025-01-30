@@ -1,0 +1,22 @@
+export default [
+    { id: 1, name: 'Tech requirements.pdf', status: 'Uploaded', createdAt: 'Jan 4, 2024', createdBy: 'Olivia Rhye', email: 'olivia@untitledui.com', selected: false },
+    { id: 2, name: 'Dashboard screenshot.jpg', status: 'Connected', createdAt: 'Jan 4, 2024', createdBy: 'Phoenix Baker', email: 'phoenix@untitledui.com', selected: false },
+    { id: 3, name: 'Prototype recording.mp4', status: 'Connected', createdAt: 'Jan 2, 2024', createdBy: 'Lana Steiner', email: 'lana@untitledui.com', selected: false },
+    { id: 4, name: 'Final Design.fig', status: 'Connected', createdAt: 'Jan 6, 2024', createdBy: 'Demi Wilkinson', email: 'demi@untitledui.com', selected: false },
+    { id: 5, name: 'UX Guidelines.docx', status: 'Connected', createdAt: 'Jan 8, 2024', createdBy: 'Candice Wu', email: 'candice@untitledui.com', selected: false },
+    { id: 6, name: 'Interaction.aep', status: 'Error', createdAt: 'Jan 6, 2024', createdBy: 'Natali Craig', email: 'natali@untitledui.com', selected: false },
+    { id: 7, name: 'Financial Report.jpg', status: 'Connected', createdAt: 'Jan 10, 2024', createdBy: 'James Wilson', email: 'james@untitledui.com', selected: false },
+    { id: 8, name: 'Survey Results.fig', status: 'Uploaded', createdAt: 'Jan 11, 2024', createdBy: 'Sophia Brown', email: 'sophia@untitledui.com', selected: false },
+    { id: 9, name: 'Marketing Plan.docx', status: 'Uploaded', createdAt: 'Jan 12, 2024', createdBy: 'John Doe', email: 'john@untitledui.com', selected: false },
+    { id: 10, name: 'Project Roadmap.fig', status: 'Connected', createdAt: 'Jan 15, 2024', createdBy: 'Liam Johnson', email: 'liam@untitledui.com', selected: false },
+    { id: 11, name: 'HR Policies.docx', status: 'Uploaded', createdAt: 'Jan 18, 2024', createdBy: 'Emma Smith', email: 'emma@untitledui.com', selected: false },
+    { id: 12, name: 'App Preview.mp4', status: 'Connected', createdAt: 'Jan 22, 2024', createdBy: 'Michael Scott', email: 'michael@untitledui.com', selected: false },
+    { id: 13, name: 'Animation Concept.aep', status: 'Uploaded', createdAt: 'Jan 23, 2024', createdBy: 'Sarah Connor', email: 'sarah@untitledui.com', selected: false },
+    { id: 14, name: 'Dashboard UI.fig', status: 'Connected', createdAt: 'Jan 24, 2024', createdBy: 'Bruce Wayne', email: 'bruce@untitledui.com', selected: false },
+    { id: 15, name: 'Mockup Preview.jpg', status: 'Uploaded', createdAt: 'Jan 25, 2024', createdBy: 'Clark Kent', email: 'clark@untitledui.com', selected: false },
+    { id: 16, name: 'Login Animation.aep', status: 'Connected', createdAt: 'Jan 26, 2024', createdBy: 'Tony Stark', email: 'tony@untitledui.com', selected: false },
+    { id: 17, name: 'UI Prototype.mp4', status: 'Uploaded', createdAt: 'Jan 27, 2024', createdBy: 'Mark Lee', email: 'mark@untitledui.com', selected: false },
+    { id: 18, name: 'Product Specs.pdf', status: 'Connected', createdAt: 'Jan 28, 2024', createdBy: 'Lisa Wong', email: 'lisa@untitledui.com', selected: false },
+    { id: 19, name: 'Wireframes.fig', status: 'Uploaded', createdAt: 'Jan 29, 2024', createdBy: 'Tom Hardy', email: 'tom@untitledui.com', selected: false },
+    { id: 20, name: 'Promo Video.mp4', status: 'Connected', createdAt: 'Jan 30, 2024', createdBy: 'Alice Johnson', email: 'alice@untitledui.com', selected: false }
+];
